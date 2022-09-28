@@ -1,0 +1,124 @@
+:root {
+    --color-primary:#1C6758;
+    --color-secondary: #3D8361;
+    --color-third: #D6CDA4;
+    --color-background: #EEF2E6;
+    --color-highlight: #CC3636;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100vh;
+    background-color: var(--color-background);
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-primary);
+    line-height: 2rem;
+}
+
+header {
+    padding: 35px;
+}
+header img {
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    background-color: var(--color-secondary);
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    border-radius: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+ul li {
+    padding: 0 40px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--color-third)
+}
+
+li a:hover {
+    color: var(--color-highlight);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto;
+    column-gap: 1em;
+
+}
+
+.promotion {
+    grid-column: span 12;
+    text-align: center;
+    padding: 2em;
+}
+
+.info {
+    text-align: center;
+    padding: 1.5em;
+    grid-column: span 4;
+    background-color: var(--color-background);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.info p {
+    text-align: left;
+}
+.info img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 25px 0;
+    padding-left: 30px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 30px;
+    justify-content: space-between;
+
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    border-top: 1px dashed var(--color-highlight);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
